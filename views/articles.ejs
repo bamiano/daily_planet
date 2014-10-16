@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+</head>
+<body>
+<h1>Summary of Each Article</h1>
+	<% allMyArticles.forEach(function(newArticle){ %>
+	<a href="//<%= newArticle.id%>"><%= newArticle.id%></a>
+	<br>
+	<%= newArticle.title%>
+	<br>
+	<br>
+	<% })%>
+
+</body>
+</html>
